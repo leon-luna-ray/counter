@@ -34,7 +34,7 @@ None at this time
 ## Next-Steps
 
 - Update styling/branding
-- Set count to local storage so avoid reset on reload
+- Set count to local storage to avoid reset on reload
 
 ## License
 
