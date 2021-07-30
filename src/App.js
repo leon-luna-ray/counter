@@ -11,6 +11,9 @@ const App = () => {
   const subtract = () => {
     setCount(count - 1);
   };
+  const clear = () => {
+    setCount(0);
+  };
 
   return (
     <main className='ui container centered grid'>
@@ -24,6 +27,9 @@ const App = () => {
           +
         </button>
       </div>
+      <button className='ui button red' onClick={clear}>
+        Clear
+      </button>
     </main>
   );
 };
