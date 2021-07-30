@@ -11,7 +11,7 @@ const App = () => {
   const subtract = () => {
     setCount(count - 1);
   };
-  const clear = () => {
+  const reset = () => {
     setCount(0);
   };
 
@@ -27,8 +27,8 @@ const App = () => {
           +
         </button>
       </div>
-      <button className='ui button red' onClick={clear}>
-        Clear
+      <button className='ui button red' onClick={reset}>
+        Reset
       </button>
     </main>
   );
