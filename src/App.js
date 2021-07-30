@@ -16,7 +16,7 @@ const App = () => {
   };
 
   return (
-    <main className='ui container centered grid'>
+    <main className='ui container centered grid center-screen'>
       <h1 className='row'>Counter</h1>
       <h1 className='count row'>{count}</h1>
       <div className='buttons row'>
