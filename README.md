@@ -1,2 +1,3 @@
-# counter
-A simple counting app.
+#Counter
+
+A simple counter app.
