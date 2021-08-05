@@ -4,6 +4,18 @@ import './App.css';
 const App = () => {
   // set initial state initial value 0
   const [count, setCount] = useState(0);
+
+  // Check local storage for previous count and set state, bug on reload
+
+  useEffect(() => {
+    const userCount = localStorage.getItem('count');
+    if (userCount) {
+      localStorage.setItem('count', 0);
+      setCount(userCount);
+    }
+    // The empty array will run hook on mount
+  }, []);
+
   // helper functions that will set state based on which button is clicked
   const add = () => {
     setCount(count + 1);
@@ -14,15 +26,6 @@ const App = () => {
   const reset = () => {
     setCount(0);
   };
-
-  useEffect(() => {
-    // Check local storage for previous count and set state
-    const userCount = localStorage.getItem('count');
-    if (userCount) {
-      setCount(userCount);
-    }
-    // The empty array will run hook on mount
-  }, []);
 
   useEffect(() => {
     // Save to local storage on state change
