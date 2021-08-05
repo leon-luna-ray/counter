@@ -10,7 +10,7 @@ const App = () => {
   useEffect(() => {
     const userCount = localStorage.getItem('count');
     if (userCount) {
-      localStorage.setItem('count', 0);
+      localStorage.clear();
       setCount(userCount);
     }
     // The empty array will run hook on mount
@@ -25,11 +25,12 @@ const App = () => {
   };
   const reset = () => {
     setCount(0);
+    localStorage.clear();
   };
 
   useEffect(() => {
     // Save to local storage on state change
-    localStorage.setItem('count', count);
+    localStorage.setItem('count', parseInt(count));
     // This will run every time count/state is updated
   }, [count]);
 
