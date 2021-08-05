@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 const App = () => {
-  // set initial state inital value 0
-  const [count, setCount] = useState(0);
+  // set initial state initial value 0
+  const [count, setCount] = useState(null);
   // helper functions that will set state based on which button is clicked
   const add = () => {
     setCount(count + 1);
@@ -14,6 +14,23 @@ const App = () => {
   const reset = () => {
     setCount(0);
   };
+
+  // Check local storage for previous count and set state
+  useEffect(() => {
+    const userCount = localStorage.getItem('count');
+    if (userCount != null) {
+      setCount(userCount);
+    } else {
+      setCount(0);
+    }
+    // The empty array will run hook on mount
+  }, []);
+
+  useEffect(() => {
+    // Save to local storage on state change
+    localStorage.setItem('count', count);
+    // This will run every time count/state is updated
+  }, [count]);
 
   return (
     <main className='ui container centered grid center-screen'>
