@@ -3,7 +3,7 @@ import './App.css';
 
 const App = () => {
   // set initial state initial value 0
-  const [count, setCount] = useState(null);
+  const [count, setCount] = useState(0);
   // helper functions that will set state based on which button is clicked
   const add = () => {
     setCount(count + 1);
@@ -15,13 +15,11 @@ const App = () => {
     setCount(0);
   };
 
-  // Check local storage for previous count and set state
   useEffect(() => {
+    // Check local storage for previous count and set state
     const userCount = localStorage.getItem('count');
-    if (userCount != null) {
+    if (userCount) {
       setCount(userCount);
-    } else {
-      setCount(0);
     }
     // The empty array will run hook on mount
   }, []);
