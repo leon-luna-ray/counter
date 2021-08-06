@@ -6,11 +6,10 @@ const App = () => {
   const [count, setCount] = useState(0);
 
   // Check local storage for previous count and set state, bug on reload may need to try a custom hook
-
   useEffect(() => {
     const userCount = localStorage.getItem('count');
     if (userCount) {
-      localStorage.clear();
+      // Bug may have been due to local storage coming back as a string ]
       setCount(userCount);
     }
     // The empty array will run hook on mount
@@ -18,14 +17,18 @@ const App = () => {
 
   // helper functions that will set state based on which button is clicked
   const add = () => {
-    const newSum = parseInt(count) + 1;
-    setCount(newSum);
+    const sum = parseInt(count) + 1;
+    setCount(sum);
   };
   const subtract = () => {
-    setCount(count - 1);
+    const diff = parseInt(count) - 1;
+    setCount(diff);
   };
   const reset = () => {
-    setCount(0);
+    // prompt user to confirm reset in case of accidental press
+    if (window.confirm('are you sure')) {
+      setCount(0);
+    }
   };
 
   useEffect(() => {
