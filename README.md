@@ -4,6 +4,13 @@
 
 A simple counter app for counting just about anything!
 
+Counter is built with React.js. The app allows the user to add or subtract 1 to the count and reset to 0.
+
+### Features
+
+- The count is saved in localstorage allowing the user to reload or leave the page without resetting the count.
+- The reset button will prompt the user to confirm they want to reset.
+
 [🚀 Launch](https://leon-luna-ray.github.io/counter/)
 
 ## Table of Contents
@@ -26,15 +33,16 @@ A simple counter app for counting just about anything!
 - CSS
 - Javascript
 - React
+- Semantic UI
 
 ## Known-Bugs
 
-None at this time
+None at this time.
 
 ## Next-Steps
 
 - Update styling/branding
-- Set count to local storage to avoid reset on reload
+- Mobile design
 
 ## License
 
