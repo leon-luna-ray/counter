@@ -39,19 +39,20 @@ const App = () => {
 
   return (
     <main className='ui container centered grid center-screen'>
-      <h1 className='row'>Counter</h1>
+      <h1 className='title row'>Counter</h1>
       <h1 className='count row'>{count}</h1>
       <div className='buttons row'>
-        <button className='ui button' onClick={subtract}>
+        <button className='add-sub massive ui button' onClick={subtract}>
           -
         </button>
-        <button className='ui button' onClick={add}>
+        <button className='add-sub massive ui button' onClick={add}>
           +
         </button>
       </div>
-      <button className='ui button red' onClick={reset}>
+      <button className='reset-btn large negative ui button' onClick={reset}>
         Reset
       </button>
+      {/* <button>Dark Mode</button> */}
     </main>
   );
 };

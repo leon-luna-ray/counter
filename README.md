@@ -43,6 +43,7 @@ Counter is built with React.js. The app allows the user to add or subtract 1 to 
 
 - Update styling/branding
 - Mobile design
+- Dark mode
 
 ## License
 
