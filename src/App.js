@@ -26,7 +26,7 @@ const App = () => {
   };
   const reset = () => {
     // prompt user to confirm reset in case of accidental press
-    if (window.confirm('are you sure')) {
+    if (window.confirm('Do you want to reset?')) {
       setCount(0);
     }
   };

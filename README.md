@@ -37,7 +37,7 @@ Counter is built with React.js. The app allows the user to add or subtract 1 to 
 
 ## Known-Bugs
 
-None at this time.
+- Zero flashes briefly on load before the count sets to the user's saved count.
 
 ## Next-Steps
 
