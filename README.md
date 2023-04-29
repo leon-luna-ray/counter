@@ -11,7 +11,7 @@ Counter is built with React.js. The app allows the user to add or subtract 1 to 
 - The count is saved in localstorage allowing the user to reload or leave the page without resetting the count.
 - The reset button will prompt the user to confirm they want to reset.
 
-[🚀 Launch](https://leon-luna-ray.github.io/counter/)
+[🚀 Launch](https://counter-rldev.netlify.app/)
 
 ## Table of Contents
 
@@ -22,10 +22,6 @@ Counter is built with React.js. The app allows the user to add or subtract 1 to 
 - [License](#license)
 - [Contact](#contact)
 - [Links](#links)
-
-## Image
-
-![Screenshot](./public/assets/img/counter.png)
 
 ## Technologies
 - Elm
