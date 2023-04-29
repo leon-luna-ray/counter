@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,eACE,YAAa,CACb,kBACF,CAEA,OACE,eACF","file":"main.f217f261.chunk.css","sourcesContent":[".center-screen {\n  display: flex;\n  align-items: center;\n}\n\n.count {\n  font-size: 15rem;\n}\n"]}
