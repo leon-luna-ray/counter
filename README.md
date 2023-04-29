@@ -28,11 +28,11 @@ Counter is built with React.js. The app allows the user to add or subtract 1 to 
 ![Screenshot](./public/assets/img/counter.png)
 
 ## Technologies
-
+- Elm
+- React.js
+- Javascript
 - HTML
 - CSS
-- Javascript
-- React
 - Semantic UI
 
 ## Known-Bugs
